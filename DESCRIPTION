@@ -1,0 +1,16 @@
+Package: fullcalendar
+Type: Package
+Title: Display calendar widgets using the FullCalendar javascript library
+Version: 0.0.0.9000
+Author: Rasmus Bååth
+Maintainer: Rasmus Bååth <rasmus.baath@gmail.com>
+Description: This package uses the htmlwidget framework to render
+    static calendar widgets that can be filled with events
+    specified in a data frame.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports:
+  htmlwidgets,
+  jsonlite
