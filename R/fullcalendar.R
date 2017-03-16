@@ -26,7 +26,7 @@
 #' @export
 fullcalendar <- function(data = NULL, settings = list(), width = NULL, height = NULL, elementId = NULL) {
   settings$events <- data
-  json_settings <- jsonlite::toJSON(settings, auto_unbox = TRUE)
+  json_settings <- jsonlite::toJSON(settings, auto_unbox = TRUE, json_verbatim = TRUE)
 
   # create widget
   htmlwidgets::createWidget(
