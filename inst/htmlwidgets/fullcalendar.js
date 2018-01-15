@@ -10,7 +10,7 @@ HTMLWidgets.widget({
     return {
 
       renderValue: function(x) {
-
+        $(el).fullCalendar( 'destroy' );
         $(el).fullCalendar(x);
 
       },
