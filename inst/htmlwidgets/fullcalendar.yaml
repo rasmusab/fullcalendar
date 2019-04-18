@@ -1,27 +1,107 @@
 dependencies:
-  - name: moment
-    version: 2.20.1
-    src: htmlwidgets/lib/moment-2.20.1/
-    script:
-      - moment.min.js
   - name: jquery
-    version: 3.2.1
-    src: htmlwidgets/lib/jquery-3.2.1/
+    version: 3.3.1
+    src: htmlwidgets/lib/jquery/
     script:
       - jquery.min.js
   - name: jquery-ui
     version: 1.12.1
-    src: htmlwidgets/lib/jquery-ui-1.12.1/
+    src: htmlwidgets/lib/jquery-ui/
     script:
       - jquery-ui.min.js
-  - name: fullcalendar
-    version: 3.8.0
-    src: htmlwidgets/lib/fullcalendar-3.8.0/
+  - name: moment
+    version: 2.24.0
+    src: htmlwidgets/lib/moment/
     script:
-      - fullcalendar.min.js
+      - moment-with-locales.min.js
+  - name: fullcalendar
+    version: 4.0.2
+    src: htmlwidgets/lib/fullcalendar-4.0.2/
+    script:
+      - main.min.js
+      - locales-all.min.js
+      - locales/af.js
+      - locales/ar.js
+      - locales/ar-dz.js
+      - locales/ar-kw.js
+      - locales/ar-ly.js
+      - locales/ar-ma.js
+      - locales/ar-sa.js
+      - locales/ar-tn.js
+      - locales/bg.js
+      - locales/bs.js
+      - locales/ca.js
+      - locales/cs.js
+      - locales/da.js
+      - locales/de.js
+      - locales/el.js
+      - locales/en-au.js
+      - locales/en-gb.js
+      - locales/en-nz.js
+      - locales/es.js
+      - locales/es-us.js
+      - locales/et.js
+      - locales/eu.js
+      - locales/fa.js
+      - locales/fi.js
+      - locales/fr.js
+      - locales/fr-ca.js
+      - locales/fr-ch.js
+      - locales/gl.js
+      - locales/he.js
+      - locales/hi.js
+      - locales/hr.js
+      - locales/hu.js
+      - locales/id.js
+      - locales/is.js
+      - locales/it.js
+      - locales/ja.js
+      - locales/ka.js
+      - locales/kk.js
+      - locales/ko.js
+      - locales/lb.js
+      - locales/lt.js
+      - locales/lv.js
+      - locales/mk.js
+      - locales/ms.js
+      - locales/nb.js
+      - locales/nl.js
+      - locales/nn.js
+      - locales/pl.js
+      - locales/pt.js
+      - locales/pt-br.js
+      - locales/ro.js
+      - locales/ru.js
+      - locales/sk.js
+      - locales/sl.js
+      - locales/sq.js
+      - locales/sr.js
+      - locales/sr-cyrl.js
+      - locales/sv.js
+      - locales/th.js
+      - locales/tr.js
+      - locales/uk.js
+      - locales/vi.js
+      - locales/zh-cn.js
+      - locales/zh-tw.js
     stylesheet:
-      - fullcalendar.min.css
-
-
-
-
+      - main.min.css
+  - name: daygrid
+    version: 4.0.2
+    src: htmlwidgets/lib/daygrid/
+    script:
+      - main.js
+    stylesheet:
+      - main.css
+  - name: interaction
+    version: 4.0.2
+    src: htmlwidgets/lib/interaction/
+    script:
+      - main.min.js
+  - name: timegrid
+    version: 4.0.2
+    src: htmlwidgets/lib/timegrid/
+    script:
+      - main.min.js
+    stylesheet:
+      - main.min.css

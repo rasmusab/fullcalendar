@@ -24,18 +24,18 @@
 
 #'
 #' @export
-fullcalendar <- function(data = NULL, settings = list(), width = NULL, height = NULL, elementId = NULL) {
+fullcalendar <- function(data = NULL, settings = list(), width = NULL,
+                         height = NULL, elementId = NULL) {
   settings$events <- data
-  #json_settings <- jsonlite::toJSON(settings, auto_unbox = TRUE, json_verbatim = TRUE)
-  attr(settings, 'TOJSON_ARGS') <- list(dataframe = "rows")
+  attr(settings, "TOJSON_ARGS") <- list(dataframe = "rows")
 
   # create widget
   htmlwidgets::createWidget(
-    name = 'fullcalendar',
+    name = "fullcalendar",
     x = settings,
     width = width,
     height = height,
-    package = 'fullcalendar',
+    package = "fullcalendar",
     elementId = elementId
   )
 }
@@ -57,13 +57,16 @@ fullcalendar <- function(data = NULL, settings = list(), width = NULL, height = 
 #' @name fullcalendar-shiny
 #'
 #' @export
-fullcalendarOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'fullcalendar', width, height, package = 'fullcalendar')
+fullcalendarOutput <- function(outputId, width = "100%", height = "400px"){
+  htmlwidgets::shinyWidgetOutput(outputId, "fullcalendar", width, height,
+                                 package = "fullcalendar")
 }
 
 #' @rdname fullcalendar-shiny
 #' @export
 renderFullcalendar <- function(expr, env = parent.frame(), quoted = FALSE) {
-  if (!quoted) { expr <- substitute(expr) } # force quoted
+  if (!quoted) {
+    expr <- substitute(expr)
+  } # force quoted
   htmlwidgets::shinyRenderWidget(expr, fullcalendarOutput, env, quoted = TRUE)
 }
