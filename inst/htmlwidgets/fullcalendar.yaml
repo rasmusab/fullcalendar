@@ -9,11 +9,6 @@ dependencies:
     src: htmlwidgets/lib/jquery-ui/
     script:
       - jquery-ui.min.js
-  - name: moment
-    version: 2.24.0
-    src: htmlwidgets/lib/moment/
-    script:
-      - moment-with-locales.min.js
   - name: fullcalendar
     version: 4.0.2
     src: htmlwidgets/lib/fullcalendar-4.0.2/
