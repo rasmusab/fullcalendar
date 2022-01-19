@@ -1,3 +1,6 @@
+
+# *Don't user this hack, use this instead: https://dreamrs.github.io/toastui/articles/extras/calendar.html :)*
+
 # fullcalendar
 
 This is a simple R package that allows you to created calendar widgets from R using the FullCalendar javascript library. 
